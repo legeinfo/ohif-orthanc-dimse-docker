@@ -17,7 +17,7 @@ services:
       - ${NGINX_SSL_KEY:-./ssl/ssl_dev.key}:/etc/ssl/SSL.key:ro   # SSL development key
 
   viewer:
-    image: ohif/viewer:v1.x
+    image: ohif/latest
     container_name: viewer
     depends_on:
       - mongo
